@@ -1,0 +1,75 @@
+/* src/components/NavBar.css */
+
+.navbar {
+    background-color: #4caf50; /* Navbar background color */
+    padding: 10px 20px; /* Padding for the navbar */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and links */
+    position: sticky; /* Use sticky positioning */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Make sure it's on top of other elements */
+}
+
+.nav-content {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow content to grow */
+}
+
+.brand-title {
+    color: white; /* Title text color */
+    margin-right: 20px; /* Space between title and subtitle */
+    font-size: 24px; /* Adjust font size */
+}
+
+.brand-subtitle {
+    color: white; /* Subtitle text color */
+    margin-right: 40px; /* Space between subtitle and links */
+    font-size: 16px; /* Adjust font size */
+}
+
+.nav-links {
+    display: flex; /* Align links in a row */
+    align-items: center; /* Center links vertically */
+}
+
+.nav-links a {
+    margin: 0 15px; /* Space between links */
+    font-size: 18px; /* Font size for links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.cart-icon {
+    position: relative; /* To position the cart icon */
+}
+
+.cart-icon svg {
+    font-size: 24px; /* Size of the cart icon */
+    color: white; /* Icon color */
+}
+
+/* New styles for the cart count */
+.cart-count {
+    position: absolute; /* Absolute positioning for badge */
+    top: -5px; /* Adjust position */
+    right: -10px; /* Adjust position */
+    background-color: red; /* Background color for badge */
+    color: white; /* Text color for badge */
+    border-radius: 50%; /* Circular badge */
+    padding: 2px 5px; /* Padding for the badge */
+    font-size: 12px; /* Font size for the badge */
+    font-weight: bold; /* Make the font bold for better visibility */
+}
+
+/* Ensure there's space at the top of the body for the navbar */
+body {
+    padding-top: 60px; /* Adjust this value based on navbar height */
+    margin: 0; /* Reset body margin */
+}

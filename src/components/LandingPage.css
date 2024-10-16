@@ -1,0 +1,36 @@
+/* src/components/LandingPage.css */
+
+.landing-page {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around the content */
+    color: white; /* Text color */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+}
+
+.left-section {
+    flex: 1; /* Take up 50% of space */
+    text-align: left; /* Align text to the left */
+}
+
+.right-section {
+    flex: 1; /* Take up 50% of space */
+    text-align: left; /* Align text to the left */
+}
+
+.get-started {
+    background-color: #4caf50; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Button font size */
+}
+
+.get-started:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

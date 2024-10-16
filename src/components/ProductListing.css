@@ -1,0 +1,89 @@
+/* src/components/ProductListing.css */
+
+.product-listing {
+    padding: 20px;
+    margin-top: 100px; /* Adjust this value based on the navbar height */
+    background-color: white; /* Set the background color to white */
+}
+
+/* Flexbox container for categories */
+.categories {
+    margin: 400px 0 40px; /* Add more top margin to push categories down */
+}
+
+/* Center the category titles */
+.category-title {
+    text-align: center; /* Center category titles */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the title */
+    color: #4caf50; /* Set the color to green */
+}
+
+/* Flexbox for individual plant categories */
+.plant-category {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between cards */
+}
+
+/* Style for individual product cards */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for cards */
+    flex-basis: calc(33% - 30px); /* 3 cards per row, adjust for margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    transition: transform 0.2s; /* Smooth scale transition on hover */
+}
+
+/* Scale up on hover for a nice effect */
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style for product names and prices */
+.product-name {
+    color: #4caf50; /* Set the color to green */
+    font-size: 18px; /* Adjust font size as needed */
+    margin: 10px 0; /* Add space above and below */
+}
+
+.product-price {
+    color: #4caf50; /* Set the color to green */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth transition for button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.cart-info {
+    font-size: 20px; /* Adjust font size */
+    color: #4caf50; /* Green color for cart info */
+    margin-bottom: 20px; /* Space below the cart info */
+}
